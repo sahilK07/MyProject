@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    background: skyblue;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 150px;
+    text-align: center;
+    margin-left: 5px;
+
+}
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 320px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+button:disabled{
+    background: gray;
+    color:white;
+}

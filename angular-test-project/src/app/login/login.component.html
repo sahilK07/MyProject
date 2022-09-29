@@ -1,0 +1,25 @@
+<div class="wrapper">
+
+
+    <div class="block">
+
+        <form [formGroup]="myLoginForm" (ngSubmit)="onLogin()">
+            <h2>LOGIN</h2>
+            <input type="text" placeholder="Username" class="inp" formControlName="username" />
+            <small class="text-danger" *ngIf="!myLoginForm.get('username').valid && myLoginForm.get('username').touched">
+                Please Enter Username</small>
+            <input type="password" placeholder="*****" class="inp" formControlName="password" />
+            <small class="text-danger" *ngIf="!myLoginForm.get('password').valid && myLoginForm.get('password').touched">
+                Please Enter Password</small>
+                <small class="text-danger" *ngIf="errorMsg">
+                    {{errorMsg}}</small>
+            <div class="btns">
+                <button type="submit">LOGIN</button>
+            </div>
+        </form>
+
+    </div>
+
+
+
+</div>
